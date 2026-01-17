@@ -43,6 +43,7 @@ let package = Package(
                 .linkedFramework("CoreTelephony"),
                 .linkedFramework("CoreServices"),
                 .linkedFramework("Accelerate"),
+                .linkedFramework("ReplayKit"),
                 .linkedLibrary("c++")
             ]
         )
