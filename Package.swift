@@ -20,7 +20,7 @@ let package = Package(
         .binaryTarget(
             name: "TXLiteAVSDK_TRTC",
             url: "https://resources.sejahteratech.com/Robot/TXLiteAVSDK_TRTC.xcframework.zip",
-            checksum: "48269bdbfa4b1c374f5016ed142962c848b7036578ad01f09331ff9a94208725"
+            checksum: "766ec958d20564fe953baf1cf8a0e5c697c67396df306e35225a0367a7ad1688"
            ),
         .binaryTarget(
             name: "TXSoundTouch",
