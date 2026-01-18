@@ -19,7 +19,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "TXLiteAVSDK_TRTC",
-            url: "https://sdk-liteav-1252463788.cos.ap-hongkong.myqcloud.com/customer/HelperTest/SPM/TXLiteAVSDK_TRTC.xcframework.zip",
+            url: "https://resources.sejahteratech.com/Robot/TXLiteAVSDK_TRTC.xcframework.zip",
             checksum: "48269bdbfa4b1c374f5016ed142962c848b7036578ad01f09331ff9a94208725"
            ),
         .binaryTarget(
