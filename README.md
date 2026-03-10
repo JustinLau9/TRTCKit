@@ -49,6 +49,7 @@ dependencies: [
 
 然后在您的 target 中添加 TRTCKit 作为依赖：
 
+```
 swift
 .target(
     name: "YourTarget",
