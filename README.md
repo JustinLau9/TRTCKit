@@ -49,11 +49,13 @@ dependencies: [
 
 然后在您的 target 中添加 TRTCKit 作为依赖：
 ```
-swift
+
+```swift
 .target(
     name: "YourTarget",
     dependencies: ["TRTCKit"]
 )
+```
 
 # 🚀 快速开始
 ## 1. 获取腾讯云 TRTC 密钥
@@ -61,17 +63,18 @@ swift
 
 ## 2. 配置权限
 在您的应用 Info.plist 中添加相机和麦克风权限描述：
-
+```
 xml
 <key>NSCameraUsageDescription</key>
 <string>需要您的相机权限以进行视频通话</string>
 <key>NSMicrophoneUsageDescription</key>
 <string>需要您的麦克风权限以进行语音通话</string>
+```
 
 ## 3. 初始化 TRTCKit
 在合适的位置（如 AppDelegate 或初始化管理器）调用初始化方法：
 
-swift
+```swift
 import TRTCKit
 
 // 建议使用单例管理
@@ -88,9 +91,10 @@ trtcManager.setup(sdkAppID: 123456789,
         print("初始化失败: \(error.localizedDescription)")
     }
 }
+```
 ## 4. 发起或加入通话
 发起一对一通话：
-
+```
 swift
 trtcManager.startCall(roomID: 12345, 
                       remoteUserIDs: ["对方用户ID1"]) { result in
@@ -102,7 +106,9 @@ swift
 trtcManager.joinRoom(roomID: 12345) { result in
     // 处理结果
 }
+```
 ## 5. 通话控制
+```
 swift
 // 开启/关闭本地摄像头
 trtcManager.enableLocalVideo(true)
@@ -115,6 +121,7 @@ trtcManager.switchCamera()
 
 // 挂断
 trtcManager.hangup()
+```
 详细的 API 说明请参考 Wiki 或源代码注释。
 
 # 📖 详细文档
