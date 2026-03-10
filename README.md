@@ -20,9 +20,6 @@
 
 | 主界面 | 通话界面 |
 | :---: | :---: |
-| ![screenshot1](link_to_your_screenshot1) | ![screenshot2](link_to_your_screenshot2) |
-
-*（请替换为您的应用截图）*
 
 ## 🔧 环境要求
 
@@ -57,11 +54,12 @@ swift
     name: "YourTarget",
     dependencies: ["TRTCKit"]
 )
-🚀 快速开始
-1. 获取腾讯云 TRTC 密钥
+
+# 🚀 快速开始
+##1. 获取腾讯云 TRTC 密钥
 在开始前，您需要拥有腾讯云账号并创建 TRTC 应用，获取 SDKAppID 和 密钥。详情请参考 TRTC 官方文档。
 
-2. 配置权限
+##2. 配置权限
 在您的应用 Info.plist 中添加相机和麦克风权限描述：
 
 xml
@@ -69,7 +67,8 @@ xml
 <string>需要您的相机权限以进行视频通话</string>
 <key>NSMicrophoneUsageDescription</key>
 <string>需要您的麦克风权限以进行语音通话</string>
-3. 初始化 TRTCKit
+
+##3. 初始化 TRTCKit
 在合适的位置（如 AppDelegate 或初始化管理器）调用初始化方法：
 
 swift
@@ -89,7 +88,7 @@ trtcManager.setup(sdkAppID: 123456789,
         print("初始化失败: \(error.localizedDescription)")
     }
 }
-4. 发起或加入通话
+##4. 发起或加入通话
 发起一对一通话：
 
 swift
@@ -103,7 +102,7 @@ swift
 trtcManager.joinRoom(roomID: 12345) { result in
     // 处理结果
 }
-5. 通话控制
+##5. 通话控制
 swift
 // 开启/关闭本地摄像头
 trtcManager.enableLocalVideo(true)
@@ -118,29 +117,27 @@ trtcManager.switchCamera()
 trtcManager.hangup()
 详细的 API 说明请参考 Wiki 或源代码注释。
 
-📖 详细文档
+#📖 详细文档
 API 参考文档
 
-常见问题
+#常见问题
 
-更新日志
+#更新日志
 
-🤝 贡献
+#🤝 贡献
 欢迎任何形式的贡献！如果您有好的建议或发现了 bug，请通过 Issues 提交。如果您想贡献代码，请阅读 贡献指南。
 
-📄 许可证
+#📄 许可证
 TRTCKit 基于 MIT 许可证开源。详见 LICENSE 文件。
 
-📬 联系方式
-作者：JustinLau
+#📬 联系方式
+##作者：JustinLau
 
-邮箱：justinlau161@gmail.com
+##邮箱：justinlau161@gmail.com
 
-项目主页：https://github.com/JustinLau9/TRTCKit
+##项目主页：https://github.com/JustinLau9/TRTCKit
 
-注意：本项目是对腾讯云 TRTC SDK 的封装，使用前请确保您已阅读并同意 TRTC 服务条款。
-
-text
+###注意：本项目是对腾讯云 TRTC SDK 的封装，使用前请确保您已阅读并同意 TRTC 服务条款。
 
 ### 使用说明
 1. **替换占位内容**：请将方括号 `[]` 内的提示文字替换为实际信息，如截图链接、作者名、邮箱、最低支持版本等。
