@@ -49,15 +49,14 @@ dependencies: [
 
 然后在您的 target 中添加 TRTCKit 作为依赖：
 
-```
-swift
+```swift
 .target(
     name: "YourTarget",
     dependencies: ["TRTCKit"]
 )
 
 # 🚀 快速开始
-##1. 获取腾讯云 TRTC 密钥
+## 1. 获取腾讯云 TRTC 密钥
 在开始前，您需要拥有腾讯云账号并创建 TRTC 应用，获取 SDKAppID 和 密钥。详情请参考 TRTC 官方文档。
 
 ## 2. 配置权限
